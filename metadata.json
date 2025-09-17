@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Omnibot",
+  "description": "Omnibot je univerzalni AI asistent, ki ustvarja slike, načrte, 3D modele, dokumente, zemljevide in še več. Poganja ga napredna umetna inteligenca v futurističnem vmesniku.",
+  "author": "Robert Pezdirc",
+  "requestFramePermissions": [],
+  "prompt": "Nariši arhitekturni načrt za majhno moderno enodružinsko hišo z merami. Vključi dnevno sobo, kuhinjo, dve spalnici in kopalnico."
+}

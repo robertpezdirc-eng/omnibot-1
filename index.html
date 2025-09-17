@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnibot Vmesnik</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <canvas id="particle-canvas"></canvas>
+    
+    <div id="content-panel" class="hidden">
+      <div id="active-branch-indicator"></div>
+      <div id="content-body">
+        <!-- Chat messages will be dynamically inserted here -->
+      </div>
+    </div>
+    
+    <div id="main-interface">
+        <div id="initial-view">
+            <div id="nexus-core"></div>
+            <h1 class="main-title">OMNIBOT</h1>
+            <p class="subtitle">IZBERI VEJO ZA NADALJEVANJE</p>
+            <div id="branch-selector">
+                <!-- Branch options will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div id="input-view" class="hidden">
+            <textarea id="prompt-textarea" placeholder="Opišite, kaj potrebujete: načrt hiše, 3D model, kodo, zemljevid..." rows="4"></textarea>
+            <div class="button-group">
+                <button id="back-btn" class="interface-btn">VEJE</button>
+                <button id="confirm-btn" class="interface-btn primary">POTRDI</button>
+            </div>
+        </div>
+        
+        <button id="stop-btn" class="interface-btn danger hidden">USTAVI</button>
+    </div>
+
+    <div id="author-credit">
+      Robert Pezdirc
+    </div>
+
+    <div id="lightbox" class="hidden">
+        <span id="close-lightbox" class="material-symbols-outlined">close</span>
+        <img id="lightbox-image" src="" alt="Povečan predogled">
+    </div>
+
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
